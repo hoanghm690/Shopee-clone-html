@@ -287,7 +287,7 @@
 
       <div class="modal" id="my-dialog-registration">       
         <div class="modal__body"> 
-            <div class="auth-form auth-form__registration">
+            <form method="POST"  class="auth-form auth-form__registration" id="form-1">
               <div class="auth-form__container">
                 <div class="auth-form__header">
                   <h3 class="auth-form__heading">Đăng ký</h3>
@@ -301,22 +301,28 @@
                     <input
                       type="text"
                       class="auth-form__input"
-                      placeholder="Email/Số điện thoại/Tên đăng nhập"
+                      name="sdt"
+                      placeholder="Số điện thoại"
                     />
+                    <span class="form-message"></span>
                   </div>
                   <div class="auth-form__group">
                     <input
                       type="password"
                       class="auth-form__input"
+                      name="password"
                       placeholder="Mật khẩu"
                     />
+                    <span class="form-message"></span>
                   </div>
                   <div class="auth-form__group">
                     <input
                       type="password"
+                      name="password_confirmation"
                       class="auth-form__input"
                       placeholder="Nhập lại mật khẩu"
                     />
+                    <span class="form-message"></span>
                   </div>
                 </div>
                 <div class="auth-form__aside">
@@ -355,7 +361,7 @@
                   </span>
                 </a>
               </div>
-            </div>           
+            </form>           
         </div>    
       </div>
       
