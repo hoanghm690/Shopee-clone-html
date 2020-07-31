@@ -287,7 +287,7 @@
 
       <div class="modal" id="my-dialog-registration">       
         <div class="modal__body"> 
-            <form method="POST"  class="auth-form auth-form__registration" id="form-1">
+            <form method="POST" class="auth-form auth-form__registration" id="form-1">
               <div class="auth-form__container">
                 <div class="auth-form__header">
                   <h3 class="auth-form__heading">Đăng ký</h3>
@@ -299,6 +299,7 @@
                 <div class="auth-form__form">
                   <div class="auth-form__group">
                     <input
+                      id="sdt"
                       type="text"
                       class="auth-form__input"
                       name="sdt"
@@ -308,6 +309,7 @@
                   </div>
                   <div class="auth-form__group">
                     <input
+                      id="password"
                       type="password"
                       class="auth-form__input"
                       name="password"
@@ -317,6 +319,7 @@
                   </div>
                   <div class="auth-form__group">
                     <input
+                      id="password_confirmation"
                       type="password"
                       name="password_confirmation"
                       class="auth-form__input"
@@ -335,9 +338,9 @@
                 </div>
   
                 <div class="auth-form__controls">
-                  <button class="btn auth-form__controls-back">
+                  <div class="btn auth-form__controls-back">
                     <a href="" class="auth-form__link">TRỞ LẠI</a> 
-                  </button>
+                  </div>
                   <button class="btn btn--primary">ĐĂNG KÝ</button>
                 </div>
               </div>
@@ -367,7 +370,7 @@
       
       <div class="modal" id="my-dialog-login">      
         <div class="modal__body">
-            <div class="auth-form "> 
+            <form class="auth-form" id="form-2"> 
               <div class="auth-form__container">
                 <div class="auth-form__header">
                   <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -379,17 +382,23 @@
                 <div class="auth-form__form">
                   <div class="auth-form__group">
                     <input
+                      id="sdt"
                       type="text"
+                      name="sdt"
                       class="auth-form__input"
                       placeholder="Email/Số điện thoại/Tên đăng nhập"
                     />
+                    <span class="form-message"></span>
                   </div>
                   <div class="auth-form__group">
                     <input
+                      id="password"
                       type="password"
+                      name="password"
                       class="auth-form__input"
                       placeholder="Mật khẩu"
                     />
+                    <span class="form-message"></span>
                   </div>
                 </div>
                 <div class="auth-form__aside">
@@ -403,9 +412,9 @@
                 </div>
       
                 <div class="auth-form__controls">
-                  <button class="btn auth-form__controls-back">
+                  <div class="btn auth-form__controls-back">
                     <a href="" class="auth-form__link">TRỞ LẠI</a>
-                  </button>
+                  </div>
                   <button class="btn btn--primary">ĐĂNG NHẬP</button>
                 </div>
               </div>
@@ -429,7 +438,7 @@
                   </span>
                 </a>
               </div>
-            </div> 
+            </form> 
         </div>  
       </div>
 

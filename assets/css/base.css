@@ -220,3 +220,18 @@ html {
   cursor: default;
   pointer-events: none;
 }
+
+.auth-form__group.invalid .auth-form__input {
+  border-color: #f33a58;
+}
+
+.auth-form__group.invalid .form-message {
+  color: #f33a58;
+}
+.form-message {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+
+  float: left;
+  padding: 4px 0 0 4px;
+}
